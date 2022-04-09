@@ -75,7 +75,7 @@ body {
 .block1, .block2{
   height: 100%;
   padding: 0;
-  background: #fff1f0;
+  background: #fef9f6;
   box-shadow: 0 0 10px rgba(0,0,0,0.55);
 }
 
@@ -91,24 +91,28 @@ body {
   border-radius: 10px 30px 30px 10px;
 }
 
- img {
-  display: block;
-  border-radius: 5%;
-  width: 50%;
-  margin-left:5%;
-  margin-top:5%;
- }
-.text3, .shortDesc{
+.ava {
+   display: block;
+   border-radius: 5%;
+   width: 50%;
+   margin-left:5%;
+   margin-top:5%;
+}
+
+.text3, .shortDesc {
   display: block;
 }
-.text3{
+
+.text3 {
   text-align: center;
   color: pink;
   font-family: "Poiret One";
 }
 
 .shortDesc{
+  text-align: center;
   font-family: "Poiret One";
+
 }
 
 #FEFU{
@@ -121,7 +125,7 @@ body {
     margin-top: 100%;
   }
   100% {
-    margin-top: 10vh;
+    margin-top: 7.5vh;
   }
 }
 
