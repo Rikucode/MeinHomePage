@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=BIZ+UDPMincho&family=Caveat&family=Yanone+Kaffeesatz:wght@300&family=PT+Sans+Narrow&family=Poiret+One&family=Press+Start+2P&family=Bebas+Neue&family=Lavishly+Yours&family=Lobster&family=Noto+Serif+JP:wght@600&family=Pacifico&family=Roboto+Slab:wght@500&family=Rubik+Glitch&family=Rubik+Puddles&family=Rubik+Wet+Paint&family=Vazirmatn&display=swap%27");
+/* font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'BIZ UDPMincho', serif;
+font-family: 'Lavishly Yours', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Vazirmatn', sans-serif;
+font-family: 'Press Start 2P', serif;
+font-family: 'Poiret One', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: fixed;
+  background: linear-gradient(to top left, #e64343, #9198e5);
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+
+.text1, .text2 {
+  padding: 0;
+  opacity: 0%;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  margin-top: 21%;
+  text-align: center;
+  font-family: "Poiret One";
+  font-weight: lighter;
+  color: white;
+  font-size: 4em;
+  /* animation: textAnya 3s linear; */
+  animation-fill-mode: forwards;
+}
+
+.text1 {
+  margin-top: 19%;
+  /* animation-delay: 0.5s; */
+}
+
+.text2 {
+  /* animation-delay: 3.2s; */
+}
+
+.column1 {
+  border-radius: 30px;
+  margin-left: 15%;
+  width: 70%;
+  height: 80vh;
+  background: transparent;
+  margin-top: 100%;
+  padding: 1%;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.75); */
+  animation: div1 0s ease-out;
+  /* animation-delay: 6.1s; */
+  animation-fill-mode: forwards;
+}
+
+.block1, .block2, .block3{
+  opacity: 1;
+  padding: 0;
+  background: #fef9f6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.55);
+}
+
+.block1 {
+  float: left;
+  width: 30%;
+  height: 40%;
+  border-radius: 30px 10px 10px 30px;
+}
+
+.block2 {
+  margin-top: 1%;
+  float: left;
+  clear: both;
+  width: 30%;
+  height: 58%;
+  border-radius: 30px 10px 10px 30px;
+}
+
+.block3 {
+  height: 100%;
+  margin-left:31%;
+  width: 69%;
+  border-radius: 10px 30px 30px 10px;
+}
+
+._1c1{
+  height:35%;
+}
+
+._1c2{
+margin-top: 5%;
+position: static;
+}
+
+.ava {
+  clear:both;
+  z-index: 3;
+  display: inline-block;
+  border-radius: 5%;
+  width: 50%;
+  margin-left:5%;
+  margin-top:5%;
+  cursor: pointer;
+  position: relative;
+}
+
+.name, .shortDesc {
+  display: block;
+}
+
+.name {
+  margin: 0;
+  font-size: 4em;
+  text-align: center;
+  color: black;
+  font-family: "Caveat";
+  font-weight: lighter;
+}
+
+.shortDesc {
+  text-align: center;
+  font-family: "PT Sans Narrow";
+
+}
+
+.hiddenText {
+  font-size: 2em;
+  z-index: 1;
+  width: 30%;
+  margin-left:5%;
+  margin-top:-50%;
+  text-align: center;
+  transition: margin-left 0.8s ease-out;
+  font-family: "PT Sans Narrow";
+}
+
+.ava:hover + .hiddenText{
+  margin-left: 60%;
+}
+
+.info {
+  margin: 5%;
+  background: #eee9e6;
+  /* border-radius:
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.55); */
+}
+
+#FEFU {
+  color: blue;
+  cursor: pointer;
+}
+
+#secret {
+  visibility: collapse;
+  font-family: "PT Sans Narrow";
+  font-size: 1em;
+  text-align: center;
+}
+
+
+@keyframes div1 {
+  0% {
+    margin-top: 100%;
+  }
+  100% {
+    margin-top: 7.5vh;
+  }
+}
+
+@keyframes textAnya {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* @keyframes shift {
+  0% {
+    margin-left:5%;
+  }
+  100% {
+    margin-left:60%;
+  }
+} */
