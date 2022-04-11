@@ -119,9 +119,10 @@ position: static;
   display: inline-block;
   border-radius: 5%;
   width: 50%;
-  margin-left:5%;
+  margin-left:25%;
   margin-top:5%;
   cursor: pointer;
+  transition: margin-left 0.8s ease-out;
   position: relative;
 }
 
@@ -148,16 +149,21 @@ position: static;
   font-size: 2em;
   z-index: 1;
   width: 30%;
-  margin-left:5%;
+  margin-left:25%;
   margin-top:-50%;
   text-align: center;
   transition: margin-left 0.8s ease-out;
   font-family: "PT Sans Narrow";
 }
 
+.ava:hover {
+  margin-left: 5%;
+}
+
 .ava:hover + .hiddenText{
   margin-left: 60%;
 }
+
 
 .info {
   margin: 5%;
