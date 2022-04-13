@@ -46,46 +46,44 @@ body {
   font-family: "Poiret One";
   font-weight: lighter;
   color: white;
-  font-size: 4em;
-  /* animation: textAnya 3s linear; */
+  font-size: 8.5vh;
+  animation: textAnya 3s linear;
   animation-fill-mode: forwards;
 }
 
 .text1 {
   margin-top: 19%;
-  /* animation-delay: 0.5s; */
+  animation-delay: 0.5s;
 }
 
 .text2 {
-  /* animation-delay: 3.2s; */
+  animation-delay: 3.2s;
 }
 
 .column1 {
-  border-radius: 30px;
   margin-left: 15%;
   width: 70%;
   height: 80vh;
   background: transparent;
   margin-top: 100%;
   padding: 1%;
-  /* box-shadow: 0 0 20px rgba(0,0,0,0.75); */
-  animation: div1 0s ease-out;
-  /* animation-delay: 6.1s; */
+  animation: div1 2s ease-out;
+  animation-delay: 6.1s;
   animation-fill-mode: forwards;
 }
 
-.block1, .block2, .block3{
+.block1, .block2, .block3, .block4{
   opacity: 1;
   padding: 0;
   background: #fef9f6;
-  box-shadow: 0 0 10px rgba(0,0,0,0.55);
+  box-shadow: 0 0 1.5vh rgba(0,0,0,0.75);
 }
 
 .block1 {
   float: left;
   width: 30%;
   height: 40%;
-  border-radius: 30px 10px 10px 30px;
+  border-radius: 4vh 1.5vh 1.5vh 1.5vh;
 }
 
 .block2 {
@@ -94,23 +92,34 @@ body {
   clear: both;
   width: 30%;
   height: 58%;
-  border-radius: 30px 10px 10px 30px;
+  border-radius: 1.5vh 1.5vh 1.5vh 4vh;
 }
 
 .block3 {
-  height: 100%;
+  height: 10.5%;
   margin-left:31%;
   width: 69%;
-  border-radius: 10px 30px 30px 10px;
+  border-radius: 1.5vh 4vh 1.5vh 1.5vh;
 }
 
-._1c1{
-  height:35%;
+.block4 {
+  width: 69%;
+  height: 87.5%;
+  margin-top: 1%;
+  margin-left:31%;
+  border-radius: 1.5vh 1.5vh 4vh 1.5vh;
 }
 
-._1c2{
-margin-top: 5%;
-position: static;
+.b1c1{
+  margin-left: 5%;
+  margin-top: 5%;
+  height:85%;
+  width: 90%;
+}
+
+.b1c2 {
+  margin-top: 5%;
+  position: static;
 }
 
 .ava {
@@ -118,58 +127,110 @@ position: static;
   z-index: 3;
   display: inline-block;
   border-radius: 5%;
-  width: 50%;
-  margin-left:25%;
-  margin-top:5%;
-  cursor: pointer;
+  height: 100%;
+  left:50%;
+  margin-left:-27.5%;
   transition: margin-left 0.8s ease-out;
   position: relative;
 }
 
-.name, .shortDesc {
-  display: block;
-}
-
 .name {
   margin: 0;
-  font-size: 4em;
+  width:100%;
+  font-size: 7vh;
   text-align: center;
   color: black;
-  font-family: "Caveat";
+  font-family: "Poiret One";
   font-weight: lighter;
 }
 
-.shortDesc {
+h3 {
   text-align: center;
-  font-family: "PT Sans Narrow";
-
+  font-size: 3vh;
+  font-family: "Yanone Kaffeesatz";
+  font-weight: lighter;
 }
 
 .hiddenText {
-  font-size: 2em;
+  font-size: 6vh;
   z-index: 1;
   width: 30%;
-  margin-left:25%;
-  margin-top:-50%;
+  margin-left: 25%;
+  margin-top: -57.5%;
   text-align: center;
   transition: margin-left 0.8s ease-out;
-  font-family: "PT Sans Narrow";
+  font-family: "Yanone Kaffeesatz";
 }
 
-.ava:hover {
-  margin-left: 5%;
+.b1c1:hover .ava {
+  margin-left: -47.5%;
 }
 
-.ava:hover + .hiddenText{
-  margin-left: 60%;
+.b1c1:hover .hiddenText {
+  margin-left: 65%;
 }
 
+#firstLine {
+  margin-top:5%;
+}
 
-.info {
-  margin: 5%;
+.desc {
+  margin:1%;
+}
+
+.oddLine {
   background: #eee9e6;
-  /* border-radius:
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.55); */
+}
+
+.evenLine {
+
+}
+
+.contacts {
+  position: inherit;
+  height: 20%;
+}
+
+.bOf {
+  text-align: center;
+  font-size: 3.3vh;
+  margin-top: 15%;
+  font-family: "Yanone Kaffeesatz";
+}
+
+h2 {
+  margin: 0;
+  font-size: 4vh;
+  text-align: center;
+  font-family: "Poiret One";
+}
+
+#coffeee {
+  font-size: 2vh;
+  margin-right: 4%;
+  margin-top: 8%;
+  text-align: right;
+  font-family: "Yanone Kaffeesatz";
+}
+
+.hobbies, .achievements {
+  height: 35%;
+  padding-top:1%;
+}
+
+.hobbies {
+width: 100%;
+}
+
+.achievements {
+  margin-top: 6%;
+}
+
+.mesImg {
+  width: 12%;
+  border: none;
+  cursor: pointer;
+  margin-top:-5%;
 }
 
 #FEFU {
@@ -177,13 +238,114 @@ position: static;
   cursor: pointer;
 }
 
-#secret {
-  visibility: collapse;
-  font-family: "PT Sans Narrow";
-  font-size: 1em;
-  text-align: center;
+.hobbyPic{
+  position:relative;
+  width: 80%;
+  left:10%;
+  background: linear-gradient(to top left, #e343, #98e5);;
+  border-radius: 1vh;
+  transition: width 1s, left 1s;
 }
 
+h4{
+text-align: center;
+width:100%;
+opacity: 100%;
+font-family: "Poiret One";
+margin-top: 0.1vh;
+font-size: 1.2vw;
+transition: opacity 0.5s;
+}
+
+#progtext{
+  margin-left: -0.75vw;
+  font-size:1.15vw;
+}
+
+#game, #programming, #tourism, #music, #ski{
+    top:-275%;
+    position: relative;
+    float: left;
+    width:18%;
+    height: 40%;
+    margin-left: 0%;
+}
+
+#game, #tourism, #music, #ski{
+    position: relative;
+    float: left;
+    margin-left: 0.5%;
+
+}
+
+#programming {
+margin-left: 3.75%;
+}
+
+.allpic:hover h4{
+    opacity:0%;
+}
+
+#game:hover #gamepic{
+    width:120%;
+    left:-10%;
+    z-index: 4;
+}
+
+.allpic{
+  width:100%;
+  height:20%;
+  margin: 0;
+}
+
+#programming:hover #progpic{
+  width:120%;
+  left:-10%;
+  z-index: 4;
+}
+
+#tourism:hover #tourpic{
+  width:120%;
+  left:-10%;
+  z-index: 4;
+}
+
+#music:hover #musicpic{
+  width:120%;
+  left:-10%;
+  z-index: 4;
+}
+
+#ski:hover #skipic{
+  width:120%;
+  left:-10%;
+  z-index: 4;
+}
+
+#vk {
+  width:11%;
+  float: right;
+  margin-right: 37%;
+}
+
+#tg {
+  float: left;
+  margin-left: 35%;
+}
+
+h5{
+  font-size: 10vh;
+  text-align: center;
+  margin: 0;
+  top: 0%;
+}
+
+#rekursiya{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2vh;
+  border-radius: 1vh;
+}
 
 @keyframes div1 {
   0% {
@@ -205,12 +367,3 @@ position: static;
     opacity: 0%;
   }
 }
-
-/* @keyframes shift {
-  0% {
-    margin-left:5%;
-  }
-  100% {
-    margin-left:60%;
-  }
-} */
