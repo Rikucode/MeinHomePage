@@ -28,7 +28,7 @@ html {
 
 body {
   position: fixed;
-  background: linear-gradient(to top left, #e64343, #9198e5);
+  background: linear-gradient(to top left, #5a5a5a, #b0bbc1);
   height: 100%;
   width: 100%;
   padding:0;
@@ -67,7 +67,7 @@ body {
   background: transparent;
   margin-top: 100%;
   padding: 1%;
-  animation: div1 2s ease-out;
+  animation: div1 1.2s ease-out;
   animation-delay: 6.1s;
   animation-fill-mode: forwards;
 }
